@@ -29,6 +29,7 @@ public class Crudtest {
 
 	        // Query the inserted data
 	        String selectQuery = "SELECT name FROM students WHERE name='Alex'";
+	        
 	        PreparedStatement selectStmt = conn.prepareStatement(selectQuery);
 	        ResultSet res = selectStmt.executeQuery();
 	        while (res.next()) {
